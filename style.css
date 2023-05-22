@@ -1,5 +1,6 @@
-.header{
+.headers{
     text-align: left;
+
 }
 
 .header-list{
@@ -36,4 +37,53 @@
     font-size: 20px;
     text-decoration: none;
     color: #000;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #0e0303;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+@media (max-width:858px) {
+    .headers{
+        margin-bottom: 100;
+    }
+    .Blog-area h1{ 
+        margin-top: 50px;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        display: flex;
+        flex-direction:column;
+        position: fixed;
+        /* top: 20px;  */
+        left: -100%;
+        font-size: 25px;
+        width: 100%;
+        text-align: right;
+        /* line-height: 50px; */
+        margin-right: 40px;
+       
+    }
+
+    nav ul li {
+        display: none;
+    }
 }
